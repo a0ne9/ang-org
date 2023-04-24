@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
+
+:root {
+  --primary-color: purple;
+  --secondary-color: orange;
+  --dark-color: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #fafafa;
+  color: #333;
+}
+
+a {
+  color: var(--dark-color);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--secondary-color);
+    opacity: 0.8;
+  }
+
+  transition: all 0.2s ease-in-out;
+}
+
+ul {
+  list-style: none;
+}
