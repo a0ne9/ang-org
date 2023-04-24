@@ -1,0 +1,17 @@
+<div
+  class="w-full flex justify-between items-center p-5 shadow-md rounded-md bg-purple-50 shadow-purple-400"
+>
+  <i
+    class="material-icons cursor-pointer hover:animate-pulse hover:scale-150 ease-in-out duration-300 scale-125"
+    (click)="go(-1)"
+    >arrow_left</i
+  >
+  <p>
+    {{ dateService.date | async | moment }}
+  </p>
+  <i
+    class="material-icons cursor-pointer hover:animate-pulse hover:scale-150 ease-in-out duration-300 scale-125"
+    (click)="go(1)"
+    >arrow_right</i
+  >
+</div>
